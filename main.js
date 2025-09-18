@@ -91,8 +91,11 @@ function addElementsToPageForm(array) {
     information.appendChild(Premove);
     task.appendChild(information);
     tasksDiv.appendChild(task);
-  });
 
+    Padd.onclick = function () {
+      task.classList.add("task");
+    }
+  });
   //Remove All Button
   if (empytArray.length >= 2) {
     let all = document.createElement("p");
